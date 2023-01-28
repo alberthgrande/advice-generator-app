@@ -1,0 +1,94 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@300&display=swap");
+
+/* design */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+
+:root {
+  --primay-white-color: hsl(0, 0%, 100%);
+  --primary-light-cyan-color: hsl(193, 38%, 86%);
+  --primary-neon-green-color: hsl(150, 100%, 66%);
+
+  --natural-gray-blue-color: hsl(217, 19%, 38%);
+  --narutal-dark-grayish-blue-color: hsl(217, 19%, 24%);
+  --natural-dark-blue-color: hsl(218, 23%, 16%);
+
+  --quote-font-size: 28px;
+}
+
+body {
+  background-color: var(--natural-dark-blue-color);
+  color: var(--primay-white-color);
+}
+
+.container {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container .advice {
+  background-color: var(--narutal-dark-grayish-blue-color);
+  border-radius: 20px;
+  width: 30rem;
+  height: 20rem;
+}
+
+.advice .advice-header,
+.advice-content,
+.advice-divider,
+.advice-changer {
+  position: relative;
+  padding: 1rem;
+  top: 50px;
+  /* overflow: hidden; */
+}
+
+.advice-changer .advice-dice {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 5rem;
+  background-color: var(--primary-neon-green-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.advice-changer .advice-dice:hover {
+  background-color: var(--primary-neon-green-color);
+  background: var(--primary-neon-green-color);
+  box-shadow: 0 0 10px var(--primary-neon-green-color),
+    0 0 30px var(--primary-neon-green-color),
+    0 0 20px var(--primary-neon-green-color);
+  transition-delay: 0.3s;
+}
+
+/* .advice */
+
+/* footer */
+.attribution {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--primary-neon-green-color);
+}

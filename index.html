@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="advice">
+        <h3 class="advice-header">
+          Advice #<span id="advice-id">117</span>
+          <!-- Advice ID goes here -->
+        </h3>
+        <div class="advice-content">
+          &OpenCurlyDoubleQuote;
+          <span class="advice-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel libero
+          </span>
+          &CloseCurlyDoubleQuote;
+        </div>
+        <div class="advice-divider">
+          <picture>
+            <source
+              class="desktop-divider"
+              media="(min-width: 1440px)"
+              srcset="./images/pattern-divider-desktop.svg"
+            />
+            <source
+              media="(max-width: 375px)"
+              srcset="./images/pattern-divider-mobile.svg"
+            />
+            <img
+              class="mobile-divider"
+              class="desktop-divider"
+              src="./images/pattern-divider-desktop.svg"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="advice-changer">
+          <div class="advice-dice">
+            <img src="./images/icon-dice.svg" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Alberth Grande</a>.
+    </div>
+    <!-- script -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
