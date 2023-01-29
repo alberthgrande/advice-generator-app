@@ -19,42 +19,26 @@
   </head>
   <body>
     <div class="container">
-      <div class="advice">
-        <h3 class="advice-header">
-          Advice #<span id="advice-id">117</span>
-          <!-- Advice ID goes here -->
-        </h3>
-        <div class="advice-content">
+      <div class="advice-container">
+        <p>Advice #<span id="advice-id"></span></p>
+        <h2>
           &OpenCurlyDoubleQuote;
-          <span class="advice-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel libero
-          </span>
+          <span id="advice-text"></span>
           &CloseCurlyDoubleQuote;
-        </div>
-        <div class="advice-divider">
-          <picture>
-            <source
-              class="desktop-divider"
-              media="(min-width: 1440px)"
-              srcset="./images/pattern-divider-desktop.svg"
-            />
-            <source
-              media="(max-width: 375px)"
-              srcset="./images/pattern-divider-mobile.svg"
-            />
-            <img
-              class="mobile-divider"
-              class="desktop-divider"
-              src="./images/pattern-divider-desktop.svg"
-              alt=""
-            />
-          </picture>
-        </div>
-        <div class="advice-changer">
-          <div class="advice-dice">
-            <img src="./images/icon-dice.svg" alt="" srcset="" />
-          </div>
-        </div>
+        </h2>
+        <picture>
+          <source
+            media="(max-width: 500px)"
+            srcset="./images/pattern-divider-mobile.svg"
+          />
+          <img
+            src="./images/pattern-divider-desktop.svg"
+            alt="pattern-divider-desktop"
+          />
+        </picture>
+        <button id="generate-btn">
+          <img src="./images/icon-dice.svg" alt="icon-dice" />
+        </button>
       </div>
     </div>
 
